@@ -37,9 +37,9 @@ const addToBurger = (ingredient) => {
 }
 
 
-const removeFromBurger = () => {
+const removeFromBurger = (pickedIngredient) => {
   // function to remove ingredient from burger stack
-  const updatedStack = stack.filter((ingredient, index) => index !== stack.length - 1)
+  const updatedStack = stack.filter((eachIngredient) => pickedIngredient !== eachIngredient)
   setStack(updatedStack)
 
 
